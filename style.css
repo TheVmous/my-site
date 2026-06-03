@@ -1,0 +1,10 @@
+#topnav {
+    list-style-type:none;
+}
+
+.navtab {
+    float:left;
+    padding:16px;
+    text-align:center;
+    display:block;
+}
