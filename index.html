@@ -4,13 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width-device, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script type="module" src="router.js"></script>
 </head>
 <body>
+    <!--TODO: undo hyperlink look of nav buttons-->
     <ul id="topnav">
-        <li class="navtab">Home</li>
-        <li class="navtab">Blog</li>
-        <li class="navtab">Feedback</li>
+        <li class="navBtn"><a href="#" id="home-link">Home</a></li>
+        <li class="navBtn"><a href="#" id="blog-link">Blog</a></li>
+        <li class="navBtn"><a href="#" id="feedback-link">Feedback</a></li>
     </ul>
+
+    <!--Dynamic aspect-->
+     <div id="app">
+        <p id="tmp-output">testing</p>
+
+    </div>
 </body>
 </html>

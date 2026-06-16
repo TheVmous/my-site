@@ -1,10 +1,27 @@
+body {
+    background-color:#0c090e;
+    color: #dad4d4;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1px;
+
+}
+
 #topnav {
     list-style-type:none;
 }
 
-.navtab {
+.navBtn {
     float:left;
     padding:16px;
     text-align:center;
     display:block;
+}
+
+.navBtn:hover {
+    background-color: #a200ffb2;
+}
+
+#app {
+    margin-top: 5rem;
+    margin-left: 2rem;
 }
