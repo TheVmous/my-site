@@ -19,6 +19,16 @@ body {
 
 .navBtn:hover {
     background-color: #a200ffb2;
+    transition: color 0.1s ease;
+}
+
+.navBtn a:active {
+    color:rgb(175, 3, 58);
+}
+
+.navBtn a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #app {

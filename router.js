@@ -8,7 +8,6 @@ const topnav = document.getElementById('topnav');
 topnav.addEventListener('click', linkClick);
 
 function linkClick(event) {
-    //console.log("tag clicked: ", event.target.tagName);
     if (event.target.tagName !== "A") {
         return;
     }
