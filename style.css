@@ -1,3 +1,7 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal
+}
 body {
     background-color:#0c090e;
     color: #dad4d4;
@@ -19,19 +23,24 @@ body {
 
 .navBtn:hover {
     background-color: #a200ffb2;
-    transition: color 0.1s ease;
-}
-
-.navBtn a:active {
-    color:rgb(175, 3, 58);
+    transition: color 0.5s ease;
 }
 
 .navBtn a {
     text-decoration: none;
     color: inherit;
+
+    &:active {
+        color:rgb(175, 3, 58);
+    }
 }
 
 #app {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+
     margin-top: 5rem;
     margin-left: 2rem;
 }
