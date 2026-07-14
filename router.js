@@ -9,15 +9,7 @@ const pageDict = {
 const topnav = document.getElementById('topnav');
 topnav.addEventListener('click', linkClick);
 
-async function linkClick(event) {
-    if (event.target.tagName !== "A") {
-        return;
-    }
-
-    event.preventDefault();
-    const targetPage = event.target.dataset.page;
-    console.log(targetPage);
-
+async function loadPage(targetPage) {
     const path = "pages/" + targetPage + ".txt";
     try {
         const response = await fetch(path);
@@ -27,17 +19,19 @@ async function linkClick(event) {
 
         document.getElementById("app").innerHTML = await response.text();
     } catch {
-        document.getElementById("app").innerHTML = "<h1>Page not found</h1>";
+        loadPage("err.txt");
+        //document.getElementById("app").innerHTML = "<h1>Page not found</h1>";
     }
+}
 
-/*
-    if (pageDict[targetPage] != 'undefined') {
-        const pageContent = pageDict[targetPage];
-        document.getElementById('app').innerHTML = pageContent;
-    } else {
-        console.log("undefined page");
+async function linkClick(event) {
+    if (event.target.tagName !== "A") {
         return;
     }
-*/
-    
+
+    event.preventDefault();
+    const targetPage = event.target.dataset.page;
+    console.log(targetPage);
+
+    loadPage(targetPage);
 }
