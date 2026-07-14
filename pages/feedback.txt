@@ -1,4 +1,0 @@
-<p>Compliments? Complaints? Look no further</p>
-<p>Here is a platform for you to submit anonymous feedback to me which I'll check periodically 
-    (Shoutout to Kartavya for the inspiration, I thought it was a great idea!):</p>
-<a href=https://www.admonymous.co/ved-joshi>admonymous.co/ved-joshi</a>
