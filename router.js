@@ -19,8 +19,8 @@ async function loadPage(targetPage) {
 
         document.getElementById("app").innerHTML = await response.text();
     } catch {
-        loadPage("err.txt");
-        //document.getElementById("app").innerHTML = "<h1>Page not found</h1>";
+        //loadPage("err.txt");
+        document.getElementById("app").innerHTML = "<h1>Page not found</h1>";
     }
 }
 
@@ -35,3 +35,5 @@ async function linkClick(event) {
 
     loadPage(targetPage);
 }
+
+loadPage('home');
