@@ -30,10 +30,13 @@ body {
     background-color: #a200ffb2;
     transition: color 0.5s ease;
 }
-
 .navBtn a {
     text-decoration: none;
     color: inherit;
+}
+
+a {
+    color: rgb(208, 154, 247);
 
     &:active {
         color:rgb(175, 3, 58);
