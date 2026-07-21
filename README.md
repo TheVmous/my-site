@@ -1,2 +1,3 @@
 # my-site
-My first personal website; it's static and just a MVP for now. 
+My first personal website.
+Just an MVP for now, it's static and parses .md files for the actual content pages like 'home' or 'blog' 
